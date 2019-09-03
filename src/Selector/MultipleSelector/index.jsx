@@ -55,7 +55,7 @@ class MultipleSelector extends React.Component {
       placeholder,
       searchPlaceholder,
       searchValue,
-      selectorValueList,
+      selectorValueList
     } = this.props;
 
     const currentPlaceholder = placeholder || searchPlaceholder;
@@ -97,7 +97,7 @@ class MultipleSelector extends React.Component {
       <Selector
         {...this.props}
         tabIndex={-1}
-        showArrow={false}
+        showArrow={!!this.props.inputIcon}
         renderSelection={this.renderSelection}
         renderPlaceholder={this.renderPlaceholder}
       />
